@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kombinne furniture | contact us</title>
-    
+    <title>kombinne furniture | contact us</title>    
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
     <script> src="https://unpkg.com/@popperjs/core@2"</script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js"></script>
     <style>
         @font-face {
             font-family: Rockwell;
             src: url(ROCK.TTF)
         }  
+
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
     </style>
+
 </head>
         
 <body style="font-family: Rockwell;">
@@ -22,7 +30,7 @@
         <div class="row"> <!--split the top into a row with three columns-->
             <div class="col"></div> <!--hack empty col-->
             <div class="col" style="text-align: center"> <!--col 1 center text-->
-                <img src="media/Kombinne_2.jpg" alt="kombinne logo" class="img-fluid">
+                <img class="img-fluid" src="media/Kombinne_2.jpg" alt="kombinne logo">
             </div>
             <div class="col"> <!--col 2--> </div>
         </div>
@@ -73,89 +81,78 @@
     -->
 
     <main class="container-fluid p-4" style="padding-left: 2em; padding-right: 2em;">
+        <div class="row">
+            <div class="col" style="text-align: left;">
+                <h5>
+                Antique and vintage tables, chairs, washstands, cupboards, chest of drawers, benches, desks, 
+                and many more...<br>
+                Come and have a look at what we have. Our stock is always changing.
+                </h5>
+            </div>
+        </div>
+
         <div class="row"> <!--split the top into a row with three columns-->
-            <div class="col" style="text-align: center"> <!--col 1 center text-->
-                <p></p>
-                <h3>Hi, Les here. While the site is busy being built you can contact me at:</h3>
-                <h5>Email: leswilliams@kombinne.co.za</h5>
-                <h5>Phone: 083 415 9025</h5>
+            <div class="col" style="text-align: left"> <!--col 1 center text-->
+                <br>
+                <h5>Hi, Les here.</h5>
+                <h5>We source beautiful, original and well made furniture with a story to tell. Come and visit
+                    us if you would like to ass a piece of history or character to your home.
+                    <br> We stock mid-century, vintage and antique furniture that would suit any home, office or business.
+                    <br> We welcome any one to contact us if they are downscaling or moving and would like to sell
+                    any of their quality items.
+                </h5>
+                <div>
+                    <br>
+                    <h5>While the site is busy being built you can contact me at:
+                        <br>Email: leswilliams@kombinne.co.za
+                        <br>Phone: 083 415 9025</h5>
+                </div>
             </div>
         </div>
         <div class="row p-4">
             <div class="col" style="text-align: center;">
-                <h3>Meanwhile here is a sneak peek of what we have available!</h3>
+                <h5>Meanwhile here is a sneak preview of some few items we have on hand at the moment!</h5>
             </div>
         </div>
-        <!-- row of cards -->
+        <!-- row of images -->        
         <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/mahogany oriental chairs.jpg" alt="mahogany oriental chairs">
-                    <div class="card-body">
-                        <h4 class="card-title">Mahogany Oriental Chairs</h4>
-                        <!--<p>chairs and benches</p>-->
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/oak colonial table.jpg" alt="oak colonial table">
-                    <div class="card-body">
-                        <h4 class="card-title">Oak Colonial Table</h4>
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/brass clothes spinner.jpg" alt="brass clothes spinner">
-                    <div class="card-body">
-                        <h4 class="card-title">Brass Clothes Spinner</h4>
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
+            
+         <!-- Put your HTML here  -->
+         <div id="myModal" class="modal">
+            <span class="closebtn" onclick="closeModal(event)">&times;</span>
+            <img class="modal-content" id="expandedImg">
+        </div>
+        
+        <!-- The four columns -->
+        <div class="row">
+            <div class="col-sm">
+            <img id="myImg" class="myImages img-fluid" src="media/glass display.jpg" alt="Nature" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            </div>
+            <div class="col-sm">
+            <img id="myImg" class="myImages img-fluid" src="media/brass clothes spinner.jpg" alt="Snow" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            </div>
+            <div class="col-sm">
+            <img id="myImg" class="myImages img-fluid" src="media/mahogany oriental chairs.jpg" alt="Mountains" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            </div>
+            <div class="col-sm">
+            <img id="myImg" class="myImages img-fluid" src="media/stinkwood riempie chairs.jpg" alt="Lights" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            </div>
+        
         </div>
 
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/stinkwood riempie chairs.jpg" alt="stinkwood riempie chairs">
-                    <div class="card-body">
-                        <h4 class="card-title">Stinkwood Riempie Chairs</h4>
-                        <!--<p>chairs and benches</p>-->
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/yellowwood imbuia table.jpg" alt="yellowwood imbuia table">
-                    <div class="card-body">
-                        <h4 class="card-title">Yellowwood Imbuia Table</h4>
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
-            <div class="col-md-6 col-lg-4">
-                <div class="card"><img class="card-img-top img-fluid" src="media/glass display.jpg" alt="glass display">
-                    <div class="card-body">
-                        <h4 class="card-title">Glass Display</h4>
-                        <a href="#" class="btn-primary"></a>
-                    </div>
-                </div>
-            </div> <!--col-->
-        </div>
+
+        
     </main>
 
     <footer class="text-center text-lg-start bg-white text-muted">
-    <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <section class="d-flex justify-content-left justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block"></div>
         </section>
 
         <section class="">
-        <div class="container text-center text-md-start mt-5">
+        <div class="container text-md-start mt-5"> <!-- text-center -->
         <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
+            <div class="col"> <!-- col-lg-4 col-xl-3 mx-auto mb-4 -->
             <h6 class="fw-bold mb-4">
                 <i class="fas fa-gem me-3 text-secondary"></i>kombinne furniture
             </h6>
