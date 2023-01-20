@@ -34,3 +34,8 @@ function closeModal(event) {
   const modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
+
+$('#theme li').click(function () {
+  //alert('item: ' + $(this).text());
+  switch_style($(this).text());
+});
