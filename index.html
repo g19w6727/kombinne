@@ -22,7 +22,6 @@
             transition: 0.3s;
         }
     </style>
-
 </head>
         
 <body style="font-family: Rockwell;">
@@ -36,30 +35,36 @@
         </div>
     </div>
     <!--nav bar in the middle white box-->
-    <nav class="nav justify-content-center" style="border-color: black">
-        <div> <!-- change font colour-->
-            <ul class="nav list-unstyled">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CABINETS & CUPBOARDS</a> <!--cabinets_cupboards.html-->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CHAIRS & BENCHES</a> <!--chairs_benches.html-->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TABLES</a> <!--tables.html-->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">MISCELLANEOUS</a> <!--miscellaneous.html-->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a> <!--about.html-->
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a> <!--contact.html-->
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle1" aria-controls="navbatToggle1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarToggle1"><a class="navbar-brand" href="#"></a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 hfive">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cabinets & Cupboards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chairs & Benches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Miscellaneous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+    </div>
+
     <!--insta and facebook link-->
     <div class="nav justify-content-center">
         <ul class="nav">
@@ -83,27 +88,27 @@
     <main class="container-fluid p-4" style="padding-left: 2em; padding-right: 2em;">
         <div class="row">
             <div class="col" style="text-align: left;">
-                <h5>
+                <h6 class="hfive">
                 Antique and vintage tables, chairs, washstands, cupboards, chest of drawers, benches, desks, 
                 and many more...<br>
                 Come and have a look at what we have. Our stock is always changing.
-                </h5>
+                </h6>
             </div>
         </div>
 
         <div class="row"> <!--split the top into a row with three columns-->
             <div class="col" style="text-align: left"> <!--col 1 center text-->
                 <br>
-                <h5>Hi, Les here.</h5>
-                <h5>We source beautiful, original and well made furniture with a story to tell. Come and visit
+                <h6 class="hfive">Hi, Les here.</h6>
+                <h6 class="hfive">We source beautiful, original and well made furniture with a story to tell. Come and visit
                     us if you would like to ass a piece of history or character to your home.
                     <br> We stock mid-century, vintage and antique furniture that would suit any home, office or business.
                     <br> We welcome any one to contact us if they are downscaling or moving and would like to sell
                     any of their quality items.
-                </h5>
+                </h6>
                 <div>
                     <br>
-                    <h5>While the site is busy being built you can contact me at:
+                    <h class="hfive">While the site is busy being built you can contact me at:
                         <br>Email: leswilliams@kombinne.co.za
                         <br>Phone: 083 415 9025</h5>
                 </div>
@@ -111,7 +116,7 @@
         </div>
         <div class="row p-4">
             <div class="col" style="text-align: center;">
-                <h5>Meanwhile here is a sneak preview of some few items we have on hand at the moment!</h5>
+                <h5 class="sneakpeak">Meanwhile here is a sneak preview of some few items we have on hand at the moment!</h5>
             </div>
         </div>
         <!-- row of images -->        
@@ -126,32 +131,28 @@
         <!-- The four columns -->
         <div class="row">
             <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/glass display.jpg" alt="Nature" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            <img id="myImg" class="myImages img-fluid" src="media/glass display.jpg" alt="Nature" style="width: 100%" onclick="myFunction(event);">
             </div>
             <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/brass clothes spinner.jpg" alt="Snow" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            <img id="myImg" class="myImages img-fluid" src="media/brass clothes spinner.jpg" alt="Snow" style="width: 100%" onclick="myFunction(event);">
             </div>
             <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/mahogany oriental chairs.jpg" alt="Mountains" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            <img id="myImg" class="myImages img-fluid" src="media/mahogany oriental chairs.jpg" alt="Mountains" style="width: 100%;" onclick="myFunction(event);">
             </div>
             <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/stinkwood riempie chairs.jpg" alt="Lights" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
+            <img id="myImg" class="myImages img-fluid" src="media/stinkwood riempie chairs.jpg" alt="Lights" style="width: 100%;" onclick="myFunction(event);">
             </div>
-        
         </div>
-
-
-        
     </main>
 
-    <footer class="text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-white text-muted hfive">
         <section class="d-flex justify-content-left justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block"></div>
         </section>
 
-        <section class="">
+        <section>
         <div class="container text-md-start mt-5"> <!-- text-center -->
-        <div class="row mt-3">
+        <div class="row mt-3 st">
             <div class="col"> <!-- col-lg-4 col-xl-3 mx-auto mb-4 -->
             <h6 class="fw-bold mb-4">
                 <i class="fas fa-gem me-3 text-secondary"></i>kombinne furniture
@@ -164,7 +165,7 @@
         </div>
         </section>
 
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        <div class="text-center p-4 st" style="background-color: rgba(0, 0, 0, 0.025);">
         © 2023 Copyright: kombinne furniture
         </div>
     </footer>
