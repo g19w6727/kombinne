@@ -1,132 +1,18 @@
-/*
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    object-fit: cover;
-  }
-  
-  #myImg:hover {
-    opacity: 0.7;
-  }
-  
-  .modal {
-    display: none;
-    /* Hidden by default */
 
-    /*
-    position: fixed;
-    /* Stay in place */
-    /*
-    z-index: 1;
-    /* Sit on top */
-    /*
-    padding-top: 100px;
-    /* Location of the box 
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width 
-    height: 100%;
-    overflow: auto;
-    
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  .modal-content,
-  #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-    from {
-      transform: scale(0)
-    }
-    to {
-      transform: scale(1)
-    }
-  }
-  
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .modal-content {
-      width: 100%;
-    }
-  }
-
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .imgcontainer {
-    position: relative;
-    display: none;
-  }
-
-  .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: 40px;
-    transition: 0.3s;
-  }
-
-  .closebtn:hover,
-  .closebtn:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  */
-
+/* make laptios default */
   #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     object-fit: cover;
+    margin-bottom: 1vh;
+    height: 400px;
+    max-height: 50vh;
+    max-width: 100%;
   }
 
-  column {
+  /* <img id="myImg" class="myImages img-fluid" src="media/glass display.jpg" alt="Nature" style="width: 100%;max-width: 400px;height: 400px;height: 25vh" onclick="myFunction(event);"> */
+  .column {
     float: left;
     width: 25%;
     padding: 10px;
@@ -154,8 +40,6 @@
     position: relative;
     display: none;
   }
-  
-  
   
   /* Closable button inside the expanded image */
   .closebtn {
@@ -232,5 +116,46 @@
   
     to {
       transform: scale(1)
+    }
+  }
+
+  /* tablets */
+  @media screen and (max-width: 992px) {
+    #myImg {
+      height: 400px;
+      max-height: 30vh;
+      max-width: 100%;
+    }
+
+    .hfive {
+      font-size: medium;
+    }    
+
+    .st {
+      font-size: x-small;
+    }
+
+    
+  }
+
+  /* phones  */
+  @media screen and (max-width: 600px) {
+    #myImg {
+      height: 400px;
+      max-height: 30vh;
+      max-width: 100%; 
+    }
+    
+    .hfive {
+      font-size: small;
+    }
+
+    .sneakpeak {
+      font-size: medium;
+    }
+
+    
+    .st {
+      font-size: x-small;
     }
   }
