@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kombinne furniture | contact us</title>
-    
+    <title>contact | kombinne furniture</title>    
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.rtl.css">
+    <script src="js/bootstrap.js"></script>
+    <script> src="https://unpkg.com/@popperjs/core@2"</script>
     <link rel="stylesheet" href="css/custom.css">
-
-    
+    <script src="js/custom.js"></script>
     <style>
         @font-face {
             font-family: Rockwell;
@@ -26,44 +24,19 @@
     </style>
 </head>
         
-<body style="font-family: Rockwell;">
-
-  <script src="js/bootstrap.js"></script>
-
-    <div class="container-fluid p-2"> <!--top of website-->
-        <!--title of page name in lh corner-->
+<body style="font-family: Rockwell;" class="container bg-light padding-left padding-right">
+    <div class="container-fluid p-2 bg-white"> <!--top of website-->
         <div class="row"> <!--split the top into a row with three columns-->
             <div class="col"></div> <!--hack empty col-->
-            <div class="col" style="text-align: center"> <!--col 1 center text-->
-                <img src="media/Kombinne_2.jpg" alt="kombinne logo" class="img-fluid" style="height: 100%">
+            <div class="col mt-4" style="text-align: center"> <!--col 1 center text-->
+                <img class="img-fluid" src="media/Kombinne_2.jpg" alt="kombinne logo">
             </div>
             <div class="col"> <!--col 2--> </div>
         </div>
     </div>
-    <!--nav bar in the middle white box -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle1" aria-controls="navbatToggle1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggle1">
-        <a class="navbar-brand" href="#"></a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-      </div>
-    </nav>  
     
     <!--insta and facebook link-->
-    <div class="nav justify-content-center">
+    <div class="nav justify-content-center bg-white">
         <ul class="nav">
             <li class="nav-item">
                 <a href="https://www.instagram.com/">
@@ -71,65 +44,69 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="https://www.facebook.com">
+                <a href="https://www.facebook.com/Kombinne-Furniture-Antique-and-Vintage-Furniture/">
                     <img src="media/facebook-black.svg" alt="facebook" width="35" height="35"></img>
                 </a>
             </li>
         </ul>
     </div>
-        
+    
     <!--main body starts here***************************************************************************************************************
     grid of photos 3 column wide
     -->
 
-    <main class="container-fluid p-4" style="padding-left: 2em; padding-right: 2em;">
-
-         <!-- Put your HTML here  -->
-         <div id="myModal" class="modal">
-            <span class="closebtn" onclick="closeModal(event)">&times;</span>
-            <img class="modal-content" id="expandedImg">
+    <main class="container-fluid p-4 bg-white" style="padding-left: 4em; padding-right: 4em;">
+        <div class="row"> <!--split the top into a row with three columns-->
+            <div class="col" style="text-align: left"> <!--col 1 center text-->
+                <div>
+                    <h5>Contact us at:</h5>
+                        Email: leswilliams@kombinne.co.za
+                        <br>Phone: 083 415 9025
+                        <br>
+                </div>
+                <div class="mt-4">
+                    <h5>Discover more on Facebook and Instagram!</h5>
+                    <div class="nav justify-content-lwft bg-white">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/">
+                                    <img src="media/instagram-black.svg" alt="instagram" width="35" height="35"></img>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/Kombinne-Furniture-Antique-and-Vintage-Furniture/">
+                                    <img src="media/facebook-black.svg" alt="facebook" width="35" height="35"></img>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <!-- The four columns -->
-        <div class="row">
-            <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/glass display.jpg" alt="Nature" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
-            </div>
-            <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/brass clothes spinner.jpg" alt="Snow" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
-            </div>
-            <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/mahogany oriental chairs.jpg" alt="Mountains" style="width: 100%;max-width: 400px;height: 400px;height: 15vw" onclick="myFunction(event);">
-            </div>
-            <div class="col-sm">
-            <img id="myImg" class="myImages img-fluid" src="media/stinkwood riempie chairs.jpg" alt="Lights" style="width:100%" onclick="myFunction(event);">
-            </div>
-        </div>
+    </main>
 
-    <!--footer-->
-    <footer class="text-center text-lg-start bg-white text-muted">
+    <footer class="text-center text-lg-start bg-white text-muted hfive">
         <section class="d-flex justify-content-left justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block"></div>
         </section>
 
-        <section class="">
-        <div class="container text-md-start mt-5"> <!-- text-center -->
-        <div class="row mt-3">
-            <div class="col"> <!-- col-lg-4 col-xl-3 mx-auto mb-4 -->
-            <h6 class="fw-bold mb-4">
-                <i class="fas fa-gem me-3 text-secondary"></i>kombinne furniture
-            </h6>
-            <p>Email: leswilliams@kombinne.co.za</p>
-            <p>Cell phone: 083 415 9025</p>
-            <p>Address: 12G Main Street, Paarl, Western Cape, South Africa</p>
+        <section>
+            <div class="container text-md-start mt-5"> <!-- text-center -->
+            <div class="row mt-3 st">
+                <div class="col"> <!-- col-lg-4 col-xl-3 mx-auto mb-4 -->
+                <h6 class="fw-bold mb-4">
+                    <i class="fas fa-gem me-3 text-secondary"></i>kombinne furniture
+                </h6>
+                <p>Email: leswilliams@kombinne.co.za</p>
+                <p>Cell phone: 083 415 9025</p>
+                <p>Address: 12G Main Street, Paarl, Western Cape, South Africa</p>
+                </div>
+                <div class="text-center p-4 st" style="background-color: rgba(0, 0, 0, 0.025);">
+                    © 2023 Copyright: kombinne furniture
+                </div>
             </div>
-        </div>
-        </div>
+        
         </section>
-
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-        © 2023 Copyright: kombinne furniture
-        </div>
     </footer>
 </body>
 </html>
